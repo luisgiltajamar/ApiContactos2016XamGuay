@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RedContactosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="idAmigo" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idAmigo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Mensaje">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idOrigen" Type="int" Nullable="false" />
+    <Property Name="idDestino" Type="int" Nullable="false" />
+    <Property Name="asunto" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="contenido" Type="ntext" Nullable="false" />
+    <Property Name="leido" Type="bit" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="apellidos" Type="nvarchar" MaxLength="50" />
+    <Property Name="foto" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Contacto_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Contacto" Type="Self.Contacto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contacto">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacto_Usuario1">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Contacto" Type="Self.Contacto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contacto">
+        <PropertyRef Name="idAmigo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Mensaje_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Mensaje">
+        <PropertyRef Name="idOrigen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Mensaje_Usuario1">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Mensaje">
+        <PropertyRef Name="idDestino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RedContactosModelStoreContainer">
+    <EntitySet Name="Contacto" EntityType="Self.Contacto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mensaje" EntityType="Self.Mensaje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Contacto_Usuario" Association="Self.FK_Contacto_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Contacto" EntitySet="Contacto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacto_Usuario1" Association="Self.FK_Contacto_Usuario1">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Contacto" EntitySet="Contacto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Mensaje_Usuario" Association="Self.FK_Mensaje_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Mensaje" EntitySet="Mensaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Mensaje_Usuario1" Association="Self.FK_Mensaje_Usuario1">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Mensaje" EntitySet="Mensaje" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

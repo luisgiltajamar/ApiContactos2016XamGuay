@@ -1,0 +1,7 @@
+C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\bin\Debug\ContactosModel.dll
+C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\bin\Debug\ContactosModel.pdb
+C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\obj\Debug\ContactosModel.csprojResolveAssemblyReference.cache
+C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\obj\Debug\ContactosModel.dll
+C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\obj\Debug\ContactosModel.pdb
+C:\Users\luis\Documents\Visual Studio 2015\Projects\ApiContactos\ContactosModel\obj\Debug\ContactosModel.dll.mdb
+C:\Users\luis\Documents\Visual Studio 2015\Projects\ApiContactos\ContactosModel\bin\Debug\ContactosModel.dll.mdb

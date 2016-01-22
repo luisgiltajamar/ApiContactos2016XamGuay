@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RedContactosModelStoreContainer" CdmEntityContainer="RedContactosEntities">
+    <EntitySetMapping Name="Mensaje">
+      <EntityTypeMapping TypeName="RedContactosModel.Mensaje">
+        <MappingFragment StoreEntitySet="Mensaje">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idOrigen" ColumnName="idOrigen" />
+          <ScalarProperty Name="idDestino" ColumnName="idDestino" />
+          <ScalarProperty Name="asunto" ColumnName="asunto" />
+          <ScalarProperty Name="contenido" ColumnName="contenido" />
+          <ScalarProperty Name="leido" ColumnName="leido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="RedContactosModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Contacto" TypeName="RedContactosModel.Contacto" StoreEntitySet="Contacto">
+      <EndProperty Name="Usuario">
+        <ScalarProperty Name="id" ColumnName="idUsuario" />
+      </EndProperty>
+      <EndProperty Name="Usuario1">
+        <ScalarProperty Name="id" ColumnName="idAmigo" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
