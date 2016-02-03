@@ -7,3 +7,13 @@ C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\RepositorioAdap
 C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\RepositorioAdapter\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\RepositorioAdapter\obj\Release\RepositorioAdapter.dll
 C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\RepositorioAdapter\obj\Release\RepositorioAdapter.pdb
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\RepositorioAdapter.dll.config
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\RepositorioAdapter.dll
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\RepositorioAdapter.pdb
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\EntityFramework.dll
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\EntityFramework.xml
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\obj\Release\RepositorioAdapter.csprojResolveAssemblyReference.cache
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\obj\Release\RepositorioAdapter.dll
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\RepositorioAdapter\obj\Release\RepositorioAdapter.pdb

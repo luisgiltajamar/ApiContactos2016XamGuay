@@ -3,3 +3,8 @@ C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\
 C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\obj\Release\ContactosModel.csprojResolveAssemblyReference.cache
 C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\obj\Release\ContactosModel.dll
 C:\Users\luis\documents\visual studio 2015\Projects\ApiContactos\ContactosModel\obj\Release\ContactosModel.pdb
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\ContactosModel\bin\Release\ContactosModel.dll
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\ContactosModel\bin\Release\ContactosModel.pdb
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\ContactosModel\obj\Release\ContactosModel.csprojResolveAssemblyReference.cache
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\ContactosModel\obj\Release\ContactosModel.dll
+C:\Users\luis\Source\Repos\ApiContactos2016XamGuay\ContactosModel\obj\Release\ContactosModel.pdb
